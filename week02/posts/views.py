@@ -30,7 +30,6 @@ def function_view(request):
 
 class class_view(View):
 
-    template_name = 'view.html' #동일한 템플릿을 사용하기 위해 변수로 선언
     context = {
             "view_type": "Class Based View",
         }
@@ -38,12 +37,12 @@ class class_view(View):
     def get(self, request):
         print(f'request.method: {request.method}')
         print(f'request.GET: {request.GET}')
-        return render(request,self.template_name, self.context)
+        return render(request,"view.html", self.context)
 
     def post(self, request):
         print(f'request.method: {request.method}')
         print(f'request.POST: {request.POST}')
-        return render(request,self.template_name, self.context)
+        return render(request,"view.html", self.context)
 
 class class_view2(ListView):
     model = Post
