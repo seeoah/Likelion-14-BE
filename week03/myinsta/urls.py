@@ -18,12 +18,19 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
+from posts.views import *
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
+    path('url/', url_view),
+    path('url/<str:username>/', url_parameter_view),
+    path('fbv/', function_view),
+    path('cbv/', class_view.as_view()),
+    path('cbv2/', class_view2.as_view()),
+    path('', home_view, name='home'),
     path('posts/', include('posts.urls', namespace='posts')),
+    path('accounts/', include('accounts.urls', namespace='accounts')),
 ]
 
 if settings.DEBUG:
