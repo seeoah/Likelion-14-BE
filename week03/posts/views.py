@@ -33,5 +33,12 @@ def post_model_form_view(request):
     if request.method=='GET':
         form = PostModelForm()
         context = {'form': form }
-        return render(request, 'post_form.html', context)
-   
+        return render(request, 'post_model_form.html', context)
+    else:
+        form = PostModelForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+        else:
+            print(form.errors)
+            return render(request, 'post_model_form.html', {'form': form})
+    return redirect('posts:post-list')
