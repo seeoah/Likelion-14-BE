@@ -37,5 +37,9 @@ public class PostService {
         }
     }
 
+    public void deletePost(int id){
+        this.postDTOList.remove(id);
+    }
+
 
 }
