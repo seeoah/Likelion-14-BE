@@ -38,4 +38,10 @@ public class PostController {
 
     }
 
+    @PutMapping("/{id}")
+    public void updatePost(@PathVariable int id,
+                           @RequestBody PostDTO postDTO){
+        postService.updatePost(id, postDTO);
+    }
+
 }
