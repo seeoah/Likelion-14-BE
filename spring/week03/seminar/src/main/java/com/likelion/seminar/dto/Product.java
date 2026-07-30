@@ -1,6 +1,5 @@
-package com.likelion.seminar.model;
+package com.likelion.seminar.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
