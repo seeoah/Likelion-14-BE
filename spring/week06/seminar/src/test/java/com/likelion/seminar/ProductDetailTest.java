@@ -2,8 +2,8 @@ package com.likelion.seminar;
 
 import com.likelion.seminar.entity.Product;
 import com.likelion.seminar.entity.ProductDetail;
-import com.likelion.seminar.repositpry.ProductDetailRepository;
-import com.likelion.seminar.repositpry.ProductRepository;
+import com.likelion.seminar.repository.ProductDetailRepository;
+import com.likelion.seminar.repository.ProductRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
