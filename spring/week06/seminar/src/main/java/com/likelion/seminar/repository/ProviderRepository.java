@@ -1,4 +1,4 @@
-package com.likelion.seminar.repositpry;
+package com.likelion.seminar.repository;
 
 import com.likelion.seminar.entity.Provider;
 import org.springframework.data.jpa.repository.JpaRepository;

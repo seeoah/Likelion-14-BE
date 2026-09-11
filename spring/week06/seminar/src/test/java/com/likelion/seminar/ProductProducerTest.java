@@ -2,8 +2,8 @@ package com.likelion.seminar;
 
 import com.likelion.seminar.entity.Producer;
 import com.likelion.seminar.entity.Product;
-import com.likelion.seminar.repositpry.ProducerRepository;
-import com.likelion.seminar.repositpry.ProductRepository;
+import com.likelion.seminar.repository.ProducerRepository;
+import com.likelion.seminar.repository.ProductRepository;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.junit.jupiter.api.Test;
